@@ -5,15 +5,15 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_profile"
+            android:id="@+id/nav_account"
             android:icon="@drawable/ic_baseline_account_circle_24"
             android:title="Account"/>
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_attendance"
             android:icon="@drawable/ic_baseline_calendar_today_24"
             android:title="Attendance" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_log_entry"
             android:icon="@drawable/ic_baseline_note_add_24"
             android:title="Log Entry"/>
         <item
@@ -21,7 +21,7 @@
             android:icon="@drawable/ic_gradebook"
             android:title="Grade Book"/>
         <item
-            android:id="@+id/nav_log_entry"
+            android:id="@+id/nav_live_lesson"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Live Lesson"/>
         <item
