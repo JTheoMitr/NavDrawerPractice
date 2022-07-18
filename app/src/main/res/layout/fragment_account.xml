@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/placeholder_account_pvs"
+    android:background="@drawable/placeholder_account_pvs_new"
     tools:context=".ui.account.AccountFragment">
 
 <!--    <TextView-->
