@@ -35,30 +35,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_avatar" />
 
-<!--    <TextView-->
-<!--        android:id="@+id/user_location"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="16dp"-->
-<!--        android:layout_marginEnd="16dp"-->
-<!--        android:layout_marginTop="8dp"-->
-<!--        android:alpha="1"-->
-<!--        android:text="Current Location: MyCa"-->
-<!--        android:textSize="18sp"-->
-<!--        android:textStyle="bold"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/user_name" />-->
 
     <TextView
-        android:id="@+id/user_number"
+        android:id="@+id/user_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="16dp"
         android:alpha="1"
-        android:text="(User 70731)"
+        android:text="jenTeacher@pearson.com"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,22 +63,7 @@
         app:cornerRadius="@dimen/nav_header_height"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_number"
-        app:layout_constraintWidth_percent=".5" />
-
-    <Button
-        android:id="@+id/btn_logout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:text="Log Out User"
-        app:cornerRadius="@dimen/nav_header_height"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_settings"
+        app:layout_constraintTop_toBottomOf="@+id/user_email"
         app:layout_constraintWidth_percent=".5" />
 
     <Button
@@ -102,13 +73,28 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/white"
         android:text="Change Location"
+        app:cornerRadius="@dimen/nav_header_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_settings"
+        app:layout_constraintWidth_percent=".5" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/white"
+        android:text="Log Out User"
         android:textColor="@color/black"
         app:cornerRadius="@dimen/nav_header_height"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_logout"
+        app:layout_constraintTop_toBottomOf="@+id/btn_location"
         app:layout_constraintWidth_percent=".5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
