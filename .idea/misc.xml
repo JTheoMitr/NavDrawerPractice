@@ -9,8 +9,9 @@
         <entry key="app/src/main/res/layout/fragment_account.xml" value="0.18206521739130435" />
         <entry key="app/src/main/res/layout/fragment_attendance.xml" value="0.22916666666666666" />
         <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.18206521739130435" />
-        <entry key="app/src/main/res/layout/fragment_grades.xml" value="0.22916666666666666" />
+        <entry key="app/src/main/res/layout/fragment_grades.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.22916666666666666" />
+        <entry key="app/src/main/res/layout/fragment_lessons.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_log_entry.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.22916666666666666" />
         <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.22916666666666666" />
