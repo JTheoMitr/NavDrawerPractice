@@ -1,11 +1,226 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/placeholder_teacherdash_pvs"
-    tools:context=".ui.livelesson.LessonsFragment">
+    android:background="@drawable/bgnd_notebook_2"
+    android:visibility="visible"
+    tools:context=".ui.livelesson.LessonsFragment"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/lessons_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="cursive"
+        android:alpha="1"
+        android:text="Lessons"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 
-</FrameLayout>
+
+
+    <Button
+        android:id="@+id/btn_dashboard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#796C3B3B"
+        android:text="Dashboard"
+        android:fontFamily="cursive"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/nav_header_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lessons_title"
+        app:layout_constraintWidth_percent=".5" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#79FFFFFF"
+        android:text="Dashboard"
+        android:fontFamily="cursive"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/nav_header_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lessons_title"
+        app:layout_constraintWidth_percent=".5" />
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_links"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#7CFFFFFF"
+        android:text="Links"
+        android:fontFamily="cursive"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/nav_header_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dashboard"
+        app:layout_constraintWidth_percent=".5" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#7CFFFFFF"
+        android:text="Links"
+        android:fontFamily="cursive"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/nav_header_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dashboard"
+        app:layout_constraintWidth_percent=".5" />
+
+    <Button
+        android:id="@+id/btn_assessments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#7CFFFFFF"
+        android:text="Announcements"
+        android:fontFamily="cursive"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/nav_header_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_links"
+        app:layout_constraintWidth_percent=".5" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#7CFFFFFF"
+        android:text="Announcements"
+        android:fontFamily="cursive"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/nav_header_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_links"
+        app:layout_constraintWidth_percent=".5" />
+
+    <Spinner
+        android:id="@+id/spinner_sections"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_spinner_blue_on_clear"
+        android:paddingBottom="13dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_assessments"
+        app:layout_constraintWidth_percent=".5" />
+
+    <TextView
+        android:id="@+id/placeholder_sections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:text="All Sections"
+        android:textSize="23sp"
+        android:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_assessments"
+        />
+
+    <TextView
+        android:id="@+id/no_active_students"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="cursive"
+        android:textColor="@color/black"
+        android:alpha="1"
+        android:text="*no active students"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/placeholder_sections"/>
+
+    <ImageView
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:src="@drawable/img_pie_chart_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no_active_students"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="35dp"
+        android:alpha=".9"/>
+
+    <ImageView
+        android:id="@+id/chart_key"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:src="@drawable/img_key_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/no_active_students"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="35dp"
+        android:alpha=".9"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#7CFFFFFF"
+        android:text="My Livelesson Room"
+        android:fontFamily="cursive"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        app:cornerRadius="@dimen/nav_header_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chart_key"
+        app:layout_constraintWidth_percent=".5" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
