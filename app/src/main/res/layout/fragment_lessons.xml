@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgnd_notebook_2"
+    android:background="@drawable/bgnd_notebook_1"
     android:visibility="visible"
     tools:context=".ui.livelesson.LessonsFragment"
     tools:visibility="visible">
@@ -14,9 +14,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:fontFamily="cursive"
+        android:fontFamily="casual"
         android:alpha="1"
         android:text="Lessons"
         android:textSize="38sp"
@@ -38,14 +38,14 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="#796C3B3B"
         android:text="Dashboard"
-        android:fontFamily="cursive"
-        android:textSize="18sp"
+        android:fontFamily="casual"
+        android:textSize="13sp"
         android:textColor="@color/black"
         app:cornerRadius="@dimen/nav_header_height"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lessons_title"
-        app:layout_constraintWidth_percent=".5" />
+        app:layout_constraintWidth_percent=".4" />
 
     <Button
         android:layout_width="0dp"
@@ -55,14 +55,14 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="#79FFFFFF"
         android:text="Dashboard"
-        android:fontFamily="cursive"
-        android:textSize="18sp"
+        android:fontFamily="casual"
+        android:textSize="13sp"
         android:textColor="@color/black"
         app:cornerRadius="@dimen/nav_header_height"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lessons_title"
-        app:layout_constraintWidth_percent=".5" />
+        app:layout_constraintWidth_percent=".4" />
 
 
 
@@ -77,14 +77,14 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="#7CFFFFFF"
         android:text="Links"
-        android:fontFamily="cursive"
-        android:textSize="18sp"
+        android:fontFamily="casual"
+        android:textSize="13sp"
         android:textColor="@color/black"
         app:cornerRadius="@dimen/nav_header_height"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_dashboard"
-        app:layout_constraintWidth_percent=".5" />
+        app:layout_constraintWidth_percent=".4" />
 
     <Button
         android:layout_width="0dp"
@@ -94,14 +94,14 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="#7CFFFFFF"
         android:text="Links"
-        android:fontFamily="cursive"
-        android:textSize="18sp"
+        android:fontFamily="casual"
+        android:textSize="13sp"
         android:textColor="@color/black"
         app:cornerRadius="@dimen/nav_header_height"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_dashboard"
-        app:layout_constraintWidth_percent=".5" />
+        app:layout_constraintWidth_percent=".4" />
 
     <Button
         android:id="@+id/btn_assessments"
@@ -112,14 +112,14 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="#7CFFFFFF"
         android:text="Announcements"
-        android:fontFamily="cursive"
-        android:textSize="18sp"
+        android:fontFamily="casual"
+        android:textSize="13sp"
         android:textColor="@color/black"
         app:cornerRadius="@dimen/nav_header_height"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_links"
-        app:layout_constraintWidth_percent=".5" />
+        app:layout_constraintWidth_percent=".4" />
 
     <Button
         android:layout_width="0dp"
@@ -129,14 +129,14 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="#7CFFFFFF"
         android:text="Announcements"
-        android:fontFamily="cursive"
-        android:textSize="18sp"
+        android:fontFamily="casual"
+        android:textSize="13sp"
         android:textColor="@color/black"
         app:cornerRadius="@dimen/nav_header_height"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_links"
-        app:layout_constraintWidth_percent=".5" />
+        app:layout_constraintWidth_percent=".4" />
 
     <Spinner
         android:id="@+id/spinner_sections"
@@ -159,7 +159,7 @@
         android:layout_marginTop="40dp"
         android:text="All Sections"
         android:textSize="23sp"
-        android:fontFamily="cursive"
+        android:fontFamily="casual"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_assessments"
@@ -172,7 +172,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="6dp"
         android:layout_marginEnd="16dp"
-        android:fontFamily="cursive"
+        android:fontFamily="casual"
         android:textColor="@color/black"
         android:alpha="1"
         android:text="*no active students"
@@ -185,7 +185,7 @@
     <ImageView
         android:layout_width="135dp"
         android:layout_height="135dp"
-        android:src="@drawable/img_pie_chart_one"
+        android:src="@drawable/img_pie_chart_one_new"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/no_active_students"
         android:layout_marginStart="80dp"
@@ -211,8 +211,8 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="#7CFFFFFF"
         android:text="My Livelesson Room"
-        android:fontFamily="cursive"
-        android:textSize="15sp"
+        android:fontFamily="casual"
+        android:textSize="13sp"
         android:textColor="@color/black"
         app:cornerRadius="@dimen/nav_header_height"
         app:layout_constraintEnd_toEndOf="parent"

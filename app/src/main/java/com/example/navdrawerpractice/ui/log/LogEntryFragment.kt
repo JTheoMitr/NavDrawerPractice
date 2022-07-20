@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.transition.TransitionInflater
+import com.example.navdrawerpractice.R
 import com.example.navdrawerpractice.databinding.FragmentLogEntryBinding
 
 class LogEntryFragment : Fragment() {
@@ -24,6 +26,10 @@ class LogEntryFragment : Fragment() {
     ): View {
         val slideshowViewModel =
             ViewModelProvider(this).get(LogEntryViewModel::class.java)
+
+        val transition = TransitionInflater.from(requireContext())
+        exitTransition = transition.inflateTransition(R.transition.fade)
+        enterTransition = transition.inflateTransition(R.transition.fade)
 
         _binding = FragmentLogEntryBinding.inflate(inflater, container, false)
         val root: View = binding.root

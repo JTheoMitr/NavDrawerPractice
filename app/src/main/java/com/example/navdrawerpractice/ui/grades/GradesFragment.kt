@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.transition.TransitionInflater
 import com.example.navdrawerpractice.R
 
 class GradesFragment : Fragment() {
@@ -20,6 +21,11 @@ class GradesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        val transition = TransitionInflater.from(requireContext())
+        exitTransition = transition.inflateTransition(R.transition.fade)
+        enterTransition = transition.inflateTransition(R.transition.fade)
+
         return inflater.inflate(R.layout.fragment_grades, container, false)
     }
 
